@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_2.srcs/sources_1/new/Button_Input.vhd" \
+"../../../../project_2.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../project_2.srcs/sim_1/new/Tb_button_input.vhd" \
+
+# Do not sort compile order
+nosort
