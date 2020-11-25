@@ -33,15 +33,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity rbg_selector is
 port(
-led4_r, led4_g, led4_b : out    std_logic;
+led5_r, led5_g, led5_b : out    std_logic;
 clock : inout std_logic;
-state : inout integer;
-clk, n_Reset : in std_logic);
+clk, n_Reset : in std_logic;
+input : in std_logic );
 end rbg_selector;
 
 architecture Behavioral of rbg_selector is
 
-signal RGB_Led_4: std_logic_vector(0 to 2);
+signal RGB_Led_5: std_logic_vector(0 to 2);
 
 component Button_Input
 generic(
@@ -53,7 +53,7 @@ input, n_Reset, clk: in std_logic;
 output: inout std_logic;
 count : inout integer := 1;
 state: inout integer;
-clock, interval: inout std_logic );
+clock, interval: inout std_logic);
 end component;
 
 COMPONENT Clock_Divider
@@ -70,59 +70,45 @@ END COMPONENT;
 
 type channel_state_t is (Red, Green, Blue);
 signal channel_state: channel_state_t;
-signal input: std_logic;
-signal button_state:integer :=1;
 signal output:std_logic;
-signal state_counter: integer := 0;
+
 begin
     
-led4_r <= RGB_Led_4(2);
-led4_g <= RGB_Led_4(1);
-led4_b <= RGB_Led_4(0);
+led5_r <= RGB_Led_5(2);
+led5_g <= RGB_Led_5(1);
+led5_b <= RGB_Led_5(0);
 
 cdc : Clock_Divider
 port map(clk => clk, reset => n_Reset, clock_out => clock);
 
 bps : Button_Input
-port map(state => button_state, input => input, n_Reset => n_Reset,clk=>clk, output => output);
+port map(input => input, n_Reset => n_Reset,clk=>clk, output => output);
 
 
 channel_selector: process (clock, n_Reset) begin
     if (n_Reset'event and n_Reset = '1') then
-        state <= 1;
         channel_state <= Red;
     end if;
 
-    if (clock'event and clock = '1') then
-        if state_counter = 0 then
-            channel_state <= Red;
-        elsif state_counter = 1 then
-            channel_state <= Green;
-        elsif state_counter = 2 then
-            channel_state <= Blue;
-        end if;
-        
-       -- if(button_state = 1) then
-            
-
-        if (button_state = 2) then
-                state_counter <= (state_counter mod 3) +1 ;
-        elsif (button_state = 3) then
-            if(output'event and output = '1') then
-                state_counter <= (state_counter mod 3) +1 ;
-            end if;
-        end if;
+    if (rising_edge(output) and clock = '1') then
     
         case channel_state is
             when Red =>
-                RGB_Led_4 <= "100";
+                RGB_Led_5 <= "001";
             when Green =>
-                RGB_Led_4 <= "010";
+                RGB_Led_5 <= "010";
             when Blue =>
-                RGB_Led_4 <= "001";
+                RGB_Led_5 <= "100";
             when others =>
-                RGB_Led_4 <= "000";
+                RGB_Led_5 <= "000";
         end case;
+        if channel_state = Red then
+            channel_state <= Green;
+        elsif channel_state = Green then
+            channel_state <= Blue;
+        elsif channel_state = Blue then
+            channel_state <= Red;
+        end if;
       end if;
 end process;
 

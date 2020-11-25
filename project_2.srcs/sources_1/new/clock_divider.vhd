@@ -13,7 +13,7 @@ architecture bhv of Clock_Divider is
   
 signal count: integer:=1;
 signal tmp : std_logic := '0';
-constant clk_out_ticks : integer := 125e6/freq;
+constant clk_out_ticks : integer := (125e6/freq)*1000;
 constant clk_out_ticks_per_2 : integer := clk_out_ticks/2;
   
 begin
