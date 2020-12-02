@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Dec  2 13:02:37 2020
+# Process ID: 14732
+# Current directory: C:/Users/vilpp/Documents/GitHub/VHDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11020 C:\Users\vilpp\Documents\GitHub\VHDL\project_2.xpr
+# Log file: C:/Users/vilpp/Documents/GitHub/VHDL/vivado.log
+# Journal file: C:/Users/vilpp/Documents/GitHub/VHDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/vilpp/Documents/GitHub/VHDL/project_2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/project_2_new' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/gen_busmux4to1.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/gen_busmux4to1.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/mux_top.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/mux_top.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc'; using path 'C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/mux_tb.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/mux_tb.vhd' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/gen_busmux4to1.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/gen_busmux4to1.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/mux_top.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/mux_top.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc'; using path 'C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/gen_busmux4to1.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/gen_busmux4to1.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/Downloads/mux_tb_sources/mux_top.vhd'; using path 'C:/Users/vilpp/Downloads/mux_tb_sources/mux_top.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/vilpp/Documents/GitHub/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc'; using path 'C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 860.090 ; gain = 140.758
+update_compile_order -fileset sources_1

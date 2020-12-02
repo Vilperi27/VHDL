@@ -34,14 +34,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity rbg_selector is
 port(
 led5_r, led5_g, led5_b : out    std_logic;
-clock : inout std_logic;
-clk, n_Reset : in std_logic;
+sysclk, n_Reset : in std_logic;
 input : in std_logic );
 end rbg_selector;
 
 architecture Behavioral of rbg_selector is
 
 signal RGB_Led_5: std_logic_vector(0 to 2);
+signal clock : std_logic;
 
 component Button_Input
 generic(
@@ -50,10 +50,7 @@ repeat_limit: integer := 500
 );
 port(
 input, n_Reset, clk: in std_logic;
-output: inout std_logic;
-count : inout integer := 1;
-state: inout integer;
-clock, interval: inout std_logic);
+output: inout std_logic);
 end component;
 
 COMPONENT Clock_Divider
@@ -79,37 +76,35 @@ led5_g <= RGB_Led_5(1);
 led5_b <= RGB_Led_5(0);
 
 cdc : Clock_Divider
-port map(clk => clk, reset => n_Reset, clock_out => clock);
+port map(clk => sysclk, reset => n_Reset, clock_out => clock);
 
 bps : Button_Input
-port map(input => input, n_Reset => n_Reset,clk=>clk, output => output);
+port map(input => input, n_Reset => n_Reset,clk=>sysclk, output => output);
 
 
 channel_selector: process (clock, n_Reset) begin
-    if (n_Reset'event and n_Reset = '1') then
+    if n_Reset = '1' then
         channel_state <= Red;
-    end if;
 
-    if (rising_edge(output) and clock = '1') then
+    elsif (rising_edge(clock)) then
     
+    if output = '1' then
         case channel_state is
             when Red =>
                 RGB_Led_5 <= "001";
+                channel_state <= Green;
             when Green =>
                 RGB_Led_5 <= "010";
+                channel_state <= Blue;
             when Blue =>
                 RGB_Led_5 <= "100";
+                channel_state <= Red;
             when others =>
                 RGB_Led_5 <= "000";
         end case;
-        if channel_state = Red then
-            channel_state <= Green;
-        elsif channel_state = Green then
-            channel_state <= Blue;
-        elsif channel_state = Blue then
-            channel_state <= Red;
-        end if;
-      end if;
+        
+      end if; -- output
+      end if; --clk/rst
 end process;
 
 end Behavioral;

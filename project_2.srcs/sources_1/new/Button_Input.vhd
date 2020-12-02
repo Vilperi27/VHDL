@@ -37,10 +37,8 @@ delay: integer := 10;
 repeat_limit: integer := 10);
 port(
 input, n_Reset, clk: in std_logic;
-output: inout std_logic;
-count : inout integer := 1;
-state: inout integer;
-clock, interval: inout std_logic );
+output: inout std_logic);
+--clock, interval: inout std_logic );
 end Button_Input;              
 
 
@@ -63,9 +61,9 @@ type pulser_state_t is (Idle, Armed, Repeat);
 signal pulser_state: pulser_state_t;
 signal long_press: std_logic := '0';
 signal repeat_counter: integer := 1;
---signal interval: std_logic;
---signal clock : std_logic;
---signal count: integer:=1;
+signal interval: std_logic;
+signal clock : std_logic;
+signal count: integer:=1;
 
 begin
 cdc : Clock_Divider
@@ -97,7 +95,6 @@ button_pulser: process (clock, n_Reset) begin
        
         case pulser_state is
             when Idle => 
-            state <= 1;
                 if input = '1' then
                     output <= '1';
                     pulser_state <= Armed;
@@ -106,7 +103,6 @@ button_pulser: process (clock, n_Reset) begin
 
                 end if;
             when Armed =>
-                state <= 2;
                 output <= '0';
                 if (long_press = '1') then pulser_state <= Repeat;
                 elsif (long_press = '0' and input = '0') then
@@ -114,7 +110,6 @@ button_pulser: process (clock, n_Reset) begin
                 end if;
             when Repeat => 
             -- TODO: make repeat generate pulses by counting the clock cycles it should have between the pulses (the interval)
-                state <= 3;
                 
                 if (long_press = '0' or input = '0') then 
                     pulser_state <= Idle;

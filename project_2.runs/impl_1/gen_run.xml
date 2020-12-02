@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1606296380">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1606901822">
   <File Type="BITSTR-BMM" Name="rbg_selector_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="rbg_selector_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="rbg_selector_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="rbg_selector_power_routed.rpt"/>
   <File Type="PA-TCL" Name="rbg_selector.tcl"/>
-  <File Type="OPT-TIMING" Name="rbg_selector_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="rbg_selector_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="rbg_selector_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="rbg_selector_reports.tcl"/>
   <File Type="OPT-DRC" Name="rbg_selector_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="rbg_selector.hwdef"/>
   <File Type="PWROPT-DCP" Name="rbg_selector_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="rbg_selector_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="rbg_selector_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="rbg_selector_placed.dcp"/>
   <File Type="PLACE-IO" Name="rbg_selector_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="rbg_selector_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="rbg_selector_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="rbg_selector_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="rbg_selector_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="rbg_selector_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="rbg_selector_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="rbg_selector.bgn"/>
-  <File Type="PLACE-TIMING" Name="rbg_selector_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="rbg_selector_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="rbg_selector.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="rbg_selector_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="rbg_selector_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="rbg_selector_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="rbg_selector.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="rbg_selector_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="rbg_selector_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="rbg_selector_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="rbg_selector_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="rbg_selector_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="rbg_selector_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="rbg_selector.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="rbg_selector_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="rbg_selector.mmi"/>
@@ -50,24 +38,17 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="rbg_selector_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="rbg_selector_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="rbg_selector_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="rbg_selector_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="rbg_selector.vdi"/>
   <File Type="ROUTE-CLK" Name="rbg_selector_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="rbg_selector_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="rbg_selector_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="rbg_selector_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="rbg_selector_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rbg_selector_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rbg_selector_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rbg_selector_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rbg_selector_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="rbg_selector_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="rbg_selector_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="rbg_selector.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="rbg_selector_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="rbg_selector.rbt"/>
   <File Type="BITSTR-NKY" Name="rbg_selector.nky"/>
   <File Type="BG-DRC" Name="rbg_selector.drc"/>
-  <File Type="RDI-RDI" Name="rbg_selector.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -89,14 +70,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Downloads/mux_tb_sources/gen_busmux4to1.vhd">
+    <File Path="$PPRDIR/../../../Downloads/mux_tb_sources/gen_busmux4to1.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Downloads/mux_tb_sources/mux_top.vhd">
+    <File Path="$PPRDIR/../../../Downloads/mux_tb_sources/mux_top.vhd">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -110,7 +91,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../project_1/src/constrs/pynq-z2_v1.0.xdc">
+    <File Path="$PPRDIR/../../../project_1/src/constrs/pynq-z2_v1.0.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

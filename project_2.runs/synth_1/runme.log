@@ -14,35 +14,33 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7060 
+INFO: Helper process launched with PID 10156 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 334.680 ; gain = 99.363
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 334.770 ; gain = 99.559
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'rbg_selector' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'rbg_selector' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:41]
 	Parameter freq bound to: 1000 - type: integer 
-INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'cdc' of component 'Clock_Divider' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:81]
+INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'cdc' of component 'Clock_Divider' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:79]
 INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:12]
 	Parameter freq bound to: 1000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (1#1) [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:12]
 	Parameter delay bound to: 2000 - type: integer 
 	Parameter repeat_limit bound to: 500 - type: integer 
-INFO: [Synth 8-3491] module 'Button_Input' declared at 'C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:34' bound to instance 'bps' of component 'Button_Input' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'Button_Input' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:48]
+INFO: [Synth 8-3491] module 'Button_Input' declared at 'C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:34' bound to instance 'bps' of component 'Button_Input' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Button_Input' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:46]
 	Parameter delay bound to: 2000 - type: integer 
 	Parameter repeat_limit bound to: 500 - type: integer 
 	Parameter freq bound to: 10000 - type: integer 
-INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'cdc' of component 'Clock_Divider' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:71]
+INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:5' bound to instance 'cdc' of component 'Clock_Divider' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'Clock_Divider__parameterized1' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:12]
 	Parameter freq bound to: 10000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Clock_Divider__parameterized1' (1#1) [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/clock_divider.vhd:12]
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'Button_Input' (2#1) [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:48]
-WARNING: [Synth 8-614] signal 'output' is read in the process but is not in the sensitivity list [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:88]
-WARNING: [Synth 8-5787] Register channel_state_reg in module rbg_selector is clocked by two different clocks in the same process. This may cause simulation mismatches and synthesis errors. Consider using different process statements  [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:90]
-INFO: [Synth 8-256] done synthesizing module 'rbg_selector' (3#1) [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'Button_Input' (2#1) [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'rbg_selector' (3#1) [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/rbg_selector.vhd:41]
 WARNING: [Synth 8-3331] design Button_Input has unconnected port interval
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.316 ; gain = 155.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.039 ; gain = 154.828
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,10 +53,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.316 ; gain = 155.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.039 ; gain = 154.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.316 ; gain = 155.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 390.039 ; gain = 154.828
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -66,14 +64,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc:8]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc:8]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sysclk'. [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc:9]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sysclk]'. [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc:9]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc:34]
-CRITICAL WARNING: [Common 17-170] Unknown option '-name', please type 'set_property -help' for usage info. [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc:34]
 Finished Parsing XDC File [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vilpp/project_1/src/constrs/pynq-z2_v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rbg_selector_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/rbg_selector_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -82,27 +72,38 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 741.910 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 748.668 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 741.910 ; gain = 506.594
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 748.668 ; gain = 513.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 741.910 ; gain = 506.594
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 748.668 ; gain = 513.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 741.910 ; gain = 506.594
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 748.668 ; gain = 513.457
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "output" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "repeat_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'channel_state_reg' in module 'rbg_selector'
+INFO: [Synth 8-5544] ROM "channel_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RGB_Led_5" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     red |                              001 |                               00
+                   green |                              010 |                               01
+                    blue |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'channel_state_reg' using encoding 'one-hot' in module 'rbg_selector'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 741.910 ; gain = 506.594
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 748.668 ; gain = 513.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -115,21 +116,19 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 1     
-	   4 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
 	   5 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -141,10 +140,8 @@ Module rbg_selector
 Detailed RTL Component Info : 
 +---Registers : 
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
 +---Muxes : 
-	   4 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
 Module Clock_Divider 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -156,16 +153,15 @@ Detailed RTL Component Info :
 Module Button_Input 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 3     
+	               32 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
 	   5 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -184,15 +180,15 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-6014] Unused sequential element bps/state_reg was removed.  [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:100]
 INFO: [Synth 8-5545] ROM "bps/repeat_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3886] merging instance 'channel_state_reg[1]' (FD) to 'channel_state_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\channel_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_Led_5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_Led_5_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_Led_5_reg[2] )
 WARNING: [Synth 8-3332] Sequential element (bps/output_reg) is unused and will be removed from module rbg_selector.
 WARNING: [Synth 8-3332] Sequential element (bps/output_reg__0) is unused and will be removed from module rbg_selector.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'bps/output_reg__0/Q' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:81]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:81]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:81]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'bps/output_reg__0/Q' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:79]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:79]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/vilpp/project_2/project_2.srcs/sources_1/new/Button_Input.vhd:79]
 WARNING: [Synth 8-3332] Sequential element (bps/pulser_state_reg[1]) is unused and will be removed from module rbg_selector.
 WARNING: [Synth 8-3332] Sequential element (bps/pulser_state_reg[0]) is unused and will be removed from module rbg_selector.
 WARNING: [Synth 8-3332] Sequential element (bps/pulser_state_reg[1]__0) is unused and will be removed from module rbg_selector.
@@ -231,10 +227,11 @@ WARNING: [Synth 8-3332] Sequential element (bps/repeat_counter_reg[2]) is unused
 WARNING: [Synth 8-3332] Sequential element (bps/repeat_counter_reg[1]) is unused and will be removed from module rbg_selector.
 WARNING: [Synth 8-3332] Sequential element (bps/repeat_counter_reg[0]) is unused and will be removed from module rbg_selector.
 WARNING: [Synth 8-3332] Sequential element (bps/long_press_reg) is unused and will be removed from module rbg_selector.
-WARNING: [Synth 8-3332] Sequential element (channel_state_reg[0]) is unused and will be removed from module rbg_selector.
-INFO: [Synth 8-3886] merging instance 'channel_state_reg[1]__0' (FDE) to 'RGB_Led_5_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (RGB_Led_5_reg[0]) is unused and will be removed from module rbg_selector.
+WARNING: [Synth 8-3332] Sequential element (RGB_Led_5_reg[1]) is unused and will be removed from module rbg_selector.
+WARNING: [Synth 8-3332] Sequential element (RGB_Led_5_reg[2]) is unused and will be removed from module rbg_selector.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 741.910 ; gain = 506.594
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 748.668 ; gain = 513.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -246,13 +243,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 746.672 ; gain = 511.355
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 748.668 ; gain = 513.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 746.820 ; gain = 511.504
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 757.488 ; gain = 522.277
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,12 +260,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (channel_state_reg[0]__0) is unused and will be removed from module rbg_selector.
-WARNING: [Synth 8-3332] Sequential element (RGB_Led_5_reg[0]) is unused and will be removed from module rbg_selector.
-WARNING: [Synth 8-3332] Sequential element (RGB_Led_5_reg[2]) is unused and will be removed from module rbg_selector.
-WARNING: [Synth 8-3332] Sequential element (RGB_Led_5_reg[1]) is unused and will be removed from module rbg_selector.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,7 +285,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -305,7 +298,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -317,25 +310,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -353,11 +346,12 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    16|
-|3     |LUT1   |     1|
-|4     |LUT2   |    81|
-|5     |FDCE   |    33|
-|6     |IBUF   |     2|
-|7     |OBUF   |     4|
+|3     |LUT1   |     6|
+|4     |LUT2   |    74|
+|5     |FDCE   |    35|
+|6     |FDPE   |     1|
+|7     |IBUF   |     2|
+|8     |OBUF   |     3|
 +------+-------+------+
 
 Report Instance Areas: 
@@ -365,14 +359,14 @@ Report Instance Areas:
 |      |Instance |Module        |Cells |
 +------+---------+--------------+------+
 |1     |top      |              |   138|
-|2     |  cdc    |Clock_Divider |   131|
+|2     |  cdc    |Clock_Divider |   129|
 +------+---------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 3 critical warnings and 46 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 756.859 ; gain = 169.949
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 756.859 ; gain = 521.543
+Synthesis finished with 0 errors, 3 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 757.992 ; gain = 164.152
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 757.992 ; gain = 522.781
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -382,11 +376,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 53 Warnings, 6 Critical Warnings and 0 Errors encountered.
+33 Infos, 45 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 771.828 ; gain = 549.914
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 774.234 ; gain = 552.152
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/vilpp/project_2/project_2.runs/synth_1/rbg_selector.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file rbg_selector_utilization_synth.rpt -pb rbg_selector_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 771.828 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 25 11:25:52 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 774.234 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  2 11:36:51 2020...
